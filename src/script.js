@@ -1,1 +1,1 @@
-alert("are you amazing");
+alert("you are amazing");

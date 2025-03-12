@@ -1,3 +1,229 @@
-h1 {
+body {
+  background: #e1e4b5;
+}
+
+.container {
+  background: #f1f4c6;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  margin: 0 auto;
+  padding: 25px;
+  max-width: 600px;
   text-align: center;
+  color: #6e6969;
+  border-radius: 6px;
+  box-shadow: 0px 0px 5px rgba(110, 105, 105, 0.5);
+}
+
+h1 {
+  color: #6e6969;
+  margin: 0 50px;
+}
+
+h2 {
+  margin: 15px;
+}
+
+.iAmForm {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #e1e4b5;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    margin: auto;
+}
+
+.iAmForm input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #aaa6a4;
+    border-radius: 6px;
+    outline: none;
+    color: #6e6969;
+    background: white;
+    transition: all 0.3s ease;
+}
+
+.iAmForm input[type="text"]::placeholder {
+    color: #aaa6a4;
+    font-style: italic;
+}
+
+.iAmForm input[type="text"]:focus {
+    border-color: #aaa6a4;
+    box-shadow: 0px 0px 5px rgba(110, 105, 105, 0.5);
+}
+
+.iAmForm input[type="submit"] {
+    padding: 10px 14px;
+    font-size: 18px;
+    background: #6e6969;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.iAmForm input[type="submit"]:hover {
+    background: #555151;
+}
+
+
+.iAmAffirmation {
+  font-family: "Playwrite NG Modern", cursive;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  font-size: larger;
+  padding: 15px;
+  margin: 25px;
+}
+
+footer {
+  font-size: x-small;
+}
+
+a {
+  font-weight: 400;
+  color: #837d7d
+}
+
+a:visited {
+  color: #837d7d;
+}
+
+
+/*
+.second-color {
+  background: #d6d0b8;
+}
+
+.third-color {
+  background: #aaa6a4;
+}
+
+.fourth-color {
+  background: #837d7d;
+}
+
+
+.playwrite-ng-modern-<uniquifier> {
+  font-family: "Playwrite NG Modern", cursive;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+.montserrat-alternates-thin {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.montserrat-alternates-extralight {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.montserrat-alternates-light {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.montserrat-alternates-regular {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.montserrat-alternates-medium {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.montserrat-alternates-semibold {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.montserrat-alternates-bold {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.montserrat-alternates-extrabold {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.montserrat-alternates-black {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.montserrat-alternates-thin-italic {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.montserrat-alternates-extralight-italic {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.montserrat-alternates-light-italic {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.montserrat-alternates-regular-italic {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.montserrat-alternates-medium-italic {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.montserrat-alternates-semibold-italic {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.montserrat-alternates-bold-italic {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.montserrat-alternates-extrabold-italic {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.montserrat-alternates-black-italic {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 900;
+  font-style: italic;
 }
